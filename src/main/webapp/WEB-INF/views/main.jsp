@@ -13,7 +13,7 @@
 <P>  The time on the server is ${serverTime}. on Main </P>
 <P>  contextPath is ${contextPath} </P>
 			<div class="header__wrap__h1">
-				<c:import url="/header" />
+				<c:import url="${contextPath}/header" />
 			</div>
 </body>
 </html>
