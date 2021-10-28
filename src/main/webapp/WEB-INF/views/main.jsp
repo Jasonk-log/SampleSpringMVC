@@ -13,7 +13,13 @@
 <P>  The time on the server is ${serverTime}. on Main </P>
 <P>  contextPath is ${contextPath} </P>
 			<div class="header__wrap__h1">
-				<c:import url="${contextPath}/header" />
+				<c:import url="/header" />
 			</div>
+	<%
+		out.println("scheme: " + pageContext.getRequest().getScheme());
+	    out.println("serverName: " + pageContext.getRequest().getServerName());
+	    out.println("serverPort: " + pageContext.getRequest().getServerPort());
+		out.println("contextPath: " + request.getContextPath());
+	%>
 </body>
 </html>
